@@ -1,3 +1,4 @@
+// src/components/PartList.js
 import React from "react";
 import ListItem from "./ListItem";
 
@@ -15,7 +16,7 @@ function PartList({ len, keyObj, name, dir, renderAvatar }) {
           height="100px"
           renderAvatar={renderAvatar}
           name={name}
-        />,
+        />
       );
     }
     return content;

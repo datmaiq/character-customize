@@ -1,10 +1,10 @@
+// src/components/Avatar.js
 import React from "react";
 
 function Avatar({ avatar, randomAvatar }) {
   const renderItem = (data = {}) => {
     let content = [];
     for (let i in data) {
- 
       content.push(
         <img
           key={i}
@@ -18,11 +18,10 @@ function Avatar({ avatar, randomAvatar }) {
   };
 
   return (
-    <div className="wrap-avatar" style={{}}>
+    <div className="wrap-avatar">
       <div className="avatar" style={{ position: "fixed" }}>
         {renderItem(avatar)}
-
-        <button className="button-random" onClick={() => randomAvatar()}>
+        <button className="button-random" onClick={randomAvatar}>
           RANDOMIZE
         </button>
       </div>

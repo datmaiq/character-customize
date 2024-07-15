@@ -1,11 +1,10 @@
+// src/components/ListItem.js
 import React from "react";
 
 function ListItem({ name, keyObj, index, dir, width, height, renderAvatar }) {
   return (
     <div className="item-image">
-      {" "}
       <img
-        // name={name}
         type={name}
         id={index}
         src={`images/${dir}/${index}.png`}
