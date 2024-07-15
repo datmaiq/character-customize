@@ -1,0 +1,140 @@
+.background {
+  background: radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      #a4a4a4 75px,
+      #a4a4a4 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      #a4a4a4 76px,
+      #a4a4a4 77px,
+      transparent 78px,
+      transparent 109px
+    ),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+.title-part-list {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #0898ab;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+}
+h1 {
+  text-align: center;
+}
+.wrap-avatar {
+  display: flex;
+  position: relative;
+  flex: 2;
+  margin: 10px;
+}
+.button-image {
+  background: rgb(255 159 0 / 40%);
+}
+.avatar {
+  border: 10px solid #d1cfcb;
+  border-radius: 10%;
+}
+.item-clothe {
+  flex: 2;
+}
+.part-list-eyes {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  padding: 10px;
+  background: #dee8ea;
+  border: 5px solid #d1cfcb;
+  border-radius: 15px;
+}
+.item-image {
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.151);
+  overflow: hidden;
+}
+.item-image img:hover {
+  /* transform: scale(1.25); */
+  background-color: antiquewhite;
+}
+
+.button-random {
+  position: fixed;
+  left: 15%;
+  top: 90%;
+  background-color: #0898ab;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #f0ece7;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-random :hover {
+  background-color: #fff;
+}
+
+.button-random :active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .wrap-avatar {
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .avatar {
+    position: relative !important;
+  }
+  .item-image {
+    margin: 10px;
+  }
+  .button-random {
+    position: absolute;
+    left: 35%;
+    top: 100%;
+    transform: translate(0, 60%);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .avatar img {
+    height: 350px;
+    width: 350px;
+  }
+  .button-random {
+    position: absolute;
+    left: 30%;
+    top: 100%;
+    transform: translate(0, 60%);
+  }
+}
